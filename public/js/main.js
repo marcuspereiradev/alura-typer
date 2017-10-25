@@ -18,7 +18,6 @@ function atualizaTamanhoFrase() {
 };
 
 
-
 function inicializaContadores() {
     campo.on("input", function(){
     var conteudo = campo.val();
@@ -50,11 +49,13 @@ function inicializaCronometro() {
     
 };
 
+
 function finalizaJogo(){
     campo.attr("disabled", true);
     campo.toggleClass("campo-desativado");
     inserePlacar();
 };
+
 
 function inicializaMarcadores(){
 var frase = $(".frase").text();
@@ -74,25 +75,7 @@ campo.on("input", function(){
     
 };
 
-function inserePlacar(){
-    var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Marcus";
-    var numPalavras = $("#contador-palavras").text();
-    var botaoRemover = "<a href=''><i class='small material-icons'>delete</i></a>"
-    
-    
-    var linha = "<tr>"+
-                    "<td>" + usuario + "</td>"+
-                    "<td>" + numPalavras + "</td>"+
-                    "<td>" + botaoRemover + "</td>"+
-                "</tr>";
-    
-    corpoTabela.append(linha);
-};
 
-$(".botao-remover").click(function(){
-    
-});
 
 function reiniciaJogo(){
     campo.attr("disabled", false);
@@ -105,17 +88,6 @@ function reiniciaJogo(){
     campo.removeClass("borda-verde");
     campo.removeClass("borda-vermelha");
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
