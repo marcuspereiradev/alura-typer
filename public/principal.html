@@ -12,7 +12,12 @@
     
         <h1 class="center">Alura Typer</h1>
         <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        
+        <div class="center">
+            <img src="img/spinner.gif" alt="spinner" id="spinner">       
+            <p id="erro">Ocorreu um erro. Por favor, tente novamente!</p>
+        </div>
+        
         <ul class="informacoes center">
             <li>
             <i class="small material-icons icones">description</i>
@@ -33,6 +38,8 @@
             <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar"><i class="material-icons">restore</i></a>
            
             <a class="btn-floating btn-large waves-effect waves-light green" id="botao-placar"><i class="material-icons">assignment</i></a>
+            
+            <a class="btn-floating btn-large waves-effect waves-light blue" id="botao-frase"><i class="material-icons">shuffle</i></a>
            
         </div>
         
@@ -55,9 +62,7 @@
             </thead>
         
             <tbody>
-                   <td>Marcus</td>
-                   <td>10</td>
-                   <td><a href="" class="botao-remover"><i class="small material-icons">delete</i></a></td>
+                   
             </tbody>
             
         </table>
@@ -66,5 +71,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
 </body>
 </html>
