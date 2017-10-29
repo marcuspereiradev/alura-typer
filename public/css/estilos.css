@@ -32,3 +32,13 @@
 body {
     overflow: scroll;
 }
+
+#erro {
+    color: red;
+    font-size: 2em;
+    display: none;
+}
+
+#spinner {
+    display: none;
+}
