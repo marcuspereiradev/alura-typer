@@ -51,6 +51,19 @@ body {
     float: right;
 }
 
+.selectize-input {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.select-usuarios {
+    display: inline-block;
+}
+
+#usuarios {
+    display: block;
+}
+
 
 
 
