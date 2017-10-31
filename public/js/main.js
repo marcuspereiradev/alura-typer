@@ -7,6 +7,11 @@ $(document).ready(function(){
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
+    atualizaPlacar();
+    $("#usuarios").selectize({
+        create:true,
+        sortField:"text"
+    });
 });
 
 function atualizaTempoInicial(tempo){
@@ -41,7 +46,6 @@ function inicializaCronometro() {
     var tempoRestante = $("#tempo-digitacao").text();
     var cronometroId = setInterval(function(){
     tempoRestante--;
-    console.log(tempoRestante);
     $("#tempo-digitacao").text(tempoRestante);
 
     if(tempoRestante < 1){
